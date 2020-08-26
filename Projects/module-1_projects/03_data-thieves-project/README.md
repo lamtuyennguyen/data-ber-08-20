@@ -1,29 +1,85 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
-# Welcome to the Data Thieves Project!  
 
-## Content
-- [Project Description](#project-description)
-- [Project Goals](#project-goals)
-- [Data Workflow](#data-workflow)
-- [Requirements & Deliverables](#requirements-&-deliverables)
-- [Mentoring](#mentoring)
-- [Schedule](#schedule)
-- [Presentation](#presentation)
-- [Tips & Tricks](#tips-&-tricks)
-- [Resources](#resources)
+Housing prices in Berlin
 
-## Project Description  
-For this project you will be working in a **team**. You will have to choose a topic and find all the relevant data yourselves. This means you can connect to an API, find a dataset or scrape data from the web. Then you must organize, clean and (optional) analyze the data you found and present your findings in a presentation (you may use plots!).  
+[The Tacos: Alexander, Lam-Tuyen, Leo, Mayowa]
 
-## Project Goals
-During this project you will:
-* Learn how to obtain data from different sources, including APIs, open source datasets and/or scrape data from the web.
-* Practice how clean data using vectorized methods.
-* Begin to practice basic plotting.
+[DAFT August 2020, Berlin]
 
-## Data Workflow
-In this project you will focus on Data Extraction techniques, while you continue developing your Data Wrangling skills.
+Content
+
+Project Description
+Questions & Hypotheses
+Dataset
+Database
+Workflow
+Organization
+Links
+
+
+Project Description
+
+Berlin housing prices have been increasing drastically for the last decade. While implementing the data extraction methods we learnt in the bootcamp, we check the prices currently advertised on a website.
+
+After extracting those data and calculate the average current market price, we compare them with the data we downloaded from kaggle. The dataset we downloaded is from April 2020. Like that we can check whether there was any movement in prices since the start of the Corona crisis and now.
+
+
+Questions & Hypotheses
+
+How much do prices differ in different neighbourhoods (defined by zipcodes) in Berlin? Has there been an increase or decrease in housing prices compared to the start of the crisis? We assume that there might be a slight decrease in prices, since many people are low on budget and the demand for a new apartment might decrease.
+
+
+Dataset
+
+1. We downloaded a dataset from kaggle which entails the rental prices in Berlin in Aptil 2020: https://www.kaggle.com/phanindraparashar/germany-housing-rent-and-price-data-set-apr-20?select=apr20_rental_no_duplicates.csv 
+
+2. We webscraped from immonet.de
+
+What dataset (or datasets) did you use? What are the different sources you used (e.g. APIs, web scrapping, etc.)? Provide links to the data if available and describe the data briefly.
+
+
+Database
+
+What is the structure of your database? Have you created more than one table and if yes, how are they related to each other?
+
+
+Workflow
+
+Outline the workflow you used in your project. What are the steps you went through?
+
+We decided on the topic of checking the current rental prices in Berlin.
+We downloaded a dataset from kaggle where the author webscraped from immobilienscout24.de.
+To have comparable data we intended to extract data from immobilienscout24 with API. Since we encounted difficulty with the temporary token and encountered the authorization issue (OAuth1.8) (Leo, plz write something that makes sense here)
+
+We switched to webscraping immobilienscout24 and got 405 error. I couldn't find any walk-arounds. So we changed the plan to webscrape another website: immowelt.de. It seems that the ads there don't follow the same structure, therefore we looked for another website again: immonet.de 
+
+
+Organization
+
+We used Trello to outline the list of tasks.
+We divided the work 
+
+How did you organize your work? Did you use any tools like a kanban board?
+
+What does your repository look like? Explain your folder and file structure.
+
+
+
+Links
+
+Include links to your repository, slides and kanban board. Feel free to include any other links associated with your project.
+
+Repository: https://github.com/Lsacy/real_estate 
+Slides
+Trello
+
+
+
+
+
+
+
 
 ## Requirements & Deliverables
 The **mandatory** requirements that this project needs to satisfy are:
@@ -98,10 +154,6 @@ The presentation time limit is **5 minutes**! Our suggestion is to include at le
 * Questions you were not able to answer and why
 * Learnings
 
-## Tips & Tricks  
-* Questions first. Data second.
-* Think about the workflow of your analysis BEFORE starting to code.
-* You will have more questions than answers. It's not a problem if you can't answer some or any of your questions. Just show us why you couldn't answer them, that itself will be interesting!
 
 ## Resources  
 ### Lists
